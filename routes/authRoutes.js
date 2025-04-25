@@ -41,7 +41,9 @@ router.post('/login', (req, res) => {
   });
 });
 router.get('/user/:id', authController.getUserById);
+
 router.post('/upload-profile-photo', authController.upload, authController.uploadProfilePhoto);
+
 router.post('/reset-password', authController.resetPassword); 
 
 module.exports = router;
